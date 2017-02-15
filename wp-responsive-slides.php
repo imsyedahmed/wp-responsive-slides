@@ -1,0 +1,34 @@
+<?php
+defined( 'ABSPATH' ) or die( 'Welcome you may forget your road!!' );
+/*
+Plugin Name: Wordpress Responsive Slider
+Plugin URI:  https://github.com/imsyedahmed/wp-responsive-slides
+Description: Wordpress Responsive Slider with ResponsiveSlides.js
+Version:     1.0.0
+Author:      Syed Ahmed
+Author URI:  https://imsyedahmed.github.io/
+License:     GPL2
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+class WP_Responsive_Slides{
+  public function __construct(){
+    // plugin activation code
+
+    // plugin deactivation code
+
+    // plugin admin enqueue scripts & style
+
+    // plugin front end enqueue scripts & style
+
+    // plugin shortcode initialize
+
+
+  }
+}
+
+global $wp_res_slides;
+
+$wp_res_slides = new WP_Responsive_Slides();
+
+?>
