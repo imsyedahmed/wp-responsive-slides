@@ -11,13 +11,20 @@ License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
+// include library file
+require_once plugin_dir_path( __FILE__ ) . 'lib/class-slider.php';
+
 class WP_Responsive_Slides{
+  
   public function __construct(){
     // plugin activation code
     register_activation_hook(__FILE__, array($this, 'wp_res_sld_activation'));
 
     // plugin deactivation code
     register_deactivation_hook(__FILE__, array($this, 'wp_res_sld_deactivation'));
+
+    // slider post type initialize
+    $slider = new Slider();
 
     // plugin admin enqueue scripts & style
 
